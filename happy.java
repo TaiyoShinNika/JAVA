@@ -8,9 +8,9 @@ import java.util.*;
 // sum for storing the number after sqauring its digits
 // tnumber for temporary storing the number / a temporary variable
 // temp for the same as tnumber
-public class happy {
-    int cnumber;
-    int sum = 0;
+public class happy extends Index{
+    static int cnumber;
+    static int sum = 0;
     static int tnumber=1;
     static int temp = 0;
     // data memebers/ methods
@@ -27,7 +27,6 @@ public class happy {
         if (tnumber > 0) {
             int fdigit = onumber % 10;
             sum += fdigit * fdigit;
-            System.out.println(sum);
             tnumber = onumber / 10;
             if (tnumber != 0) {
                 recursion(tnumber);
@@ -51,7 +50,7 @@ public class happy {
         if (cnumber != 1 && cnumber != 4) {
             int result = recursion(cnumber);
             if (result == 1) {
-                System.out.println("Enetred number is a happy number");
+                System.out.println("Entered number is a happy number");
             } else {
                 System.out.println("Entered number is not a happy number");
             }
