@@ -5,7 +5,7 @@ public class Index {
         int exit = 0;
         int j = 1;
         int i = 1;
-        int z = 0;
+        int z = 1;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("|   |  |---  |     |---  |---|  |-  -|  |---");
@@ -91,7 +91,50 @@ public class Index {
 
                 }
             }
-            if(Operations ==)
+            if(operations == 2)
+            {
+                while (z > 0) {
+
+                    System.out.println("Programs Avaliable : ");
+                    System.out.println("");
+                    System.out.println("1) Coding : For Ascii Code");
+                    System.out.println("");
+                    System.out.print("Input : ");
+                    int program = sc.nextInt();
+                    System.out.println("");
+                    System.out.println("");
+
+                    if (program == 1) {
+
+                        Coding code = new Coding();
+                        code.accept();
+                        code.find();
+                        System.out.println(" ");
+                        System.out.println(" ");
+                        
+                    }
+                    System.out.println("For Programs Menu Press  1");
+                        System.out.println(" ");
+                        System.out.println("For Main Menu Press 2 ");
+                        System.out.println(" ");
+                        System.out.println("For Exiting Press 0 ");
+                        System.out.println(" ");
+                        System.out.print("Input :  ");
+                        int choose = sc.nextInt();
+                        if (choose == 1) {
+                            z = 1;
+                        }
+                        if (choose == 2) {
+                            i = 1;
+                            z = 0;
+                            ;
+                        }
+                        if (choose == 0) {
+                            i = 0;
+                            z = 0;
+                        }
+            }
         }
     }
+}
 }

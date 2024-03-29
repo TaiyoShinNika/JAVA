@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Coding {
+public class Coding extends Index {
     String wrd;
     int len;
     int min, max, temp;
